@@ -92,7 +92,7 @@
     }
 
     .sec {
-      padding: 96px 0
+      padding: 64px 0
     }
 
     .sec-head {
@@ -123,6 +123,7 @@
       border-radius: 999px;
       border: 1.5px solid transparent;
       cursor: pointer;
+      white-space: nowrap;
       transition: .25s;
       white-space: nowrap
     }
@@ -235,36 +236,40 @@
     .hdr-in {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 18px;
       height: 84px
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 11px;
+      gap: 9px;
       font-family: var(--serif);
-      font-size: 22px;
-      color: var(--abyss)
+      font-size: 17px;
+      color: var(--abyss);
+      white-space: nowrap;
+      flex: none
     }
 
     .logo .mark {
-      width: 34px;
-      height: 34px;
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
       flex: none
     }
 
     .nav {
       display: flex;
-      gap: 22px;
-      margin-left: 8px
+      gap: 16px;
+      margin-left: 0
     }
 
     .nav a {
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 600;
       color: var(--abyss);
       padding: 6px 0;
+      white-space: nowrap;
       position: relative
     }
 
@@ -288,7 +293,15 @@
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      padding-top: 2px
+      padding-top: 2px;
+      flex: none;
+      white-space: nowrap
+    }
+
+    .hdr-cta .btn-sm {
+      padding: 8px 15px;
+      font-size: 12.5px;
+      gap: 6px
     }
 
     .hdr-contact {
@@ -302,12 +315,12 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
       background: var(--roe);
       color: #fff;
       font-weight: 800;
-      font-size: 15px;
-      padding: 9px 18px;
+      font-size: 12.5px;
+      padding: 7px 14px;
       border-radius: 999px;
       white-space: nowrap;
       transition: .25s;
@@ -320,12 +333,12 @@
     }
 
     .hdr-call svg {
-      width: 15px;
-      height: 15px
+      width: 12px;
+      height: 12px
     }
 
     .hdr-msgs {
-      font-size: 11px;
+      font-size: 10px;
       text-align: center;
       color: var(--muted);
       font-weight: 600;
@@ -371,7 +384,7 @@
       grid-template-columns: 1.02fr .98fr;
       gap: 56px;
       align-items: center;
-      padding: 70px 0 84px
+      padding: 24px 0 64px
     }
 
     .hero h1 {
@@ -1322,7 +1335,7 @@
       }
 
       .sec {
-        padding: 64px 0
+        padding: 48px 0
       }
 
       .del-grid,
@@ -1393,7 +1406,7 @@
   </style>
   <style>
     <style>.page-top {
-      padding-top: 30px
+      padding-top: 24px
     }
 
     .crumbs {
@@ -1707,22 +1720,17 @@
 <body>
   <header class="hdr" id="hdr">
     <div class="wrap hdr-in">
-      <a href="mariferma-glavnaya-dizayn_4_v2.html" class="logo" aria-label="Мариферма">
-        <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" fill="#0C6570" />
-          <path d="M8 24c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="#5FC6BD" stroke-width="2" fill="none"
-            stroke-linecap="round" />
-          <path d="M20 8c4 3 6 7 6 11a6 6 0 1 1-12 0c0-4 2-8 6-11z" fill="#EAF4F4" />
-        </svg>
+      <a href="index.html" class="logo" aria-label="Мариферма">
+        <img class="mark" src="фото для сайта/logo mariferma no back.png" alt="Мариферма">
         Мариферма
       </a>
       <nav class="nav">
-        <a href="mariferma-glavnaya-dizayn_4_v2.html#products">Продукция</a>
-        <a href="mariferma-glavnaya-dizayn_4_v2.html#delivery">Опт и розница</a>
-        <a href="mariferma-molod_1.html">Молодь</a>
-        <a href="mariferma-marifarma_1.html">Марифарма</a>
-        <a href="mariferma-o-ferme_1.html">О ферме</a>
-        <a href="mariferma-glavnaya-dizayn_4_v2.html#contact">Контакты</a>
+        <a href="index.html#products">Продукция</a>
+        <a href="index.html#delivery">Опт и розница</a>
+        <a href="scallopspat.html">Молодь</a>
+        <a href="marifarma.html">Марифарма</a>
+        <a href="aboutmariferma.html">О ферме</a>
+        <a href="index.html#contact">Контакты</a>
       </nav>
       <div class="hdr-cta">
         <div class="hdr-contact">
@@ -1747,7 +1755,7 @@
   </header>
   <section class="sec page-top" style="padding-bottom:0">
     <div class="wrap">
-      <nav class="crumbs"><a href="mariferma-glavnaya-dizayn_4_v2.html">Главная</a><span class="sep">/</span><span>О
+      <nav class="crumbs"><a href="index.html">Главная</a><span class="sep">/</span><span>О
           ферме</span></nav>
     </div>
   </section>
@@ -1853,7 +1861,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
               <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" />
               <circle cx="12" cy="9" r="2.5" />
-            </svg>Приморский край, Владивостокский городской округ, посёлок Русский, посёлок Воевода, 20В</li>
+            </svg><a href="https://yandex.ru/maps/?ll=131.800136%2C43.005737&z=16&pt=131.800136%2C43.005737%2Cpm2rdm" target="_blank" rel="noopener">Приморский край, Владивостокский городской округ, посёлок Русский, посёлок Воевода, 20В</a></li>
         </ul>
       </div>
       <form class="form" onsubmit="return false">
@@ -1875,9 +1883,10 @@
         <div class="field"><label>Объём / комментарий</label><textarea rows="3"
             placeholder="Что и сколько нужно, сроки"></textarea></div>
         <button class="btn btn-primary">Отправить заявку</button>
-        <label class="consent"><input type="checkbox" name="personal-data-consent" required><span>Я соглашаюсь с <a
-              href="#privacy-policy">политикой обработки персональных данных</a>.</span></label>
-        <p class="fine">Отвечаем быстро · работаем по договору · консультация бесплатна</p>
+        <label class="consent"><input type="checkbox" name="personal-data-consent" required><span>Нажимая кнопку «Отправить заявку», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a
+              href="#personal-data-consent">Согласии на обработку персональных данных</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="privacy-policy-consent" required><span>Я подтверждаю свое согласие с условиями <a
+              href="#privacy-policy">Политики конфиденциальности</a>.</span></label>
       </form>
     </div>
   </section>
@@ -1885,22 +1894,17 @@
     <div class="wrap">
       <div class="ft-grid">
         <div>
-          <div class="logo"><svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-              <circle cx="20" cy="20" r="19" fill="#0C6570" />
-              <path d="M8 24c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="#5FC6BD" stroke-width="2" fill="none"
-                stroke-linecap="round" />
-              <path d="M20 8c4 3 6 7 6 11a6 6 0 1 1-12 0c0-4 2-8 6-11z" fill="#EAF4F4" />
-            </svg> Мариферма</div>
+          <div class="logo"><img class="mark" src="фото для сайта/logo mariferma no back.png" alt="Мариферма"> Мариферма</div>
           <p>Морская ферма живых морепродуктов в бухте Воевода. Опт, розница, молодь гребешка и функциональное питание
             «Марифарма».</p>
         </div>
         <div>
           <h4>Разделы</h4>
-          <p><a href="mariferma-glavnaya-dizayn_4_v2.html#products">Продукция</a></p>
-          <p><a href="mariferma-glavnaya-dizayn_4_v2.html#delivery">Опт и розница</a></p>
-          <p><a href="mariferma-molod_1.html">Молодь гребешка</a></p>
-          <p><a href="mariferma-marifarma_1.html">Марифарма</a></p>
-          <p><a href="mariferma-o-ferme_1.html">О ферме</a></p>
+          <p><a href="index.html#products">Продукция</a></p>
+          <p><a href="index.html#delivery">Опт и розница</a></p>
+          <p><a href="scallopspat.html">Молодь гребешка</a></p>
+          <p><a href="marifarma.html">Марифарма</a></p>
+          <p><a href="aboutmariferma.html">О ферме</a></p>
         </div>
         <div>
           <h4>Контакты</h4>
