@@ -1486,13 +1486,16 @@
               style="background-image:url('фото для сайта/webp/DSC03253 main2 4_5.webp');background-position:center;background-size:cover">
             </div>
             <div class="ph hero-slide"
-              style="background-image:url('фото для сайта/webp/DSC03240 main3 4_5.webp');background-position:center;background-size:cover">
+              data-bg="фото для сайта/webp/DSC03240 main3 4_5.webp"
+              style="background-position:center;background-size:cover">
             </div>
             <div class="ph hero-slide"
-              style="background-image:url('фото для сайта/webp/гребешок и трепанг 4_5.webp');background-position:center;background-size:cover">
+              data-bg="фото для сайта/webp/гребешок и трепанг 4_5.webp"
+              style="background-position:center;background-size:cover">
             </div>
             <div class="ph hero-slide"
-              style="background-image:url('фото для сайта/webp/DSC03249 s 4_5.webp');background-position:center;background-size:cover">
+              data-bg="фото для сайта/webp/DSC03249 s 4_5.webp"
+              style="background-position:center;background-size:cover">
             </div>
           </div>
           <div class="hero-dots" id="heroDots"></div>
@@ -1599,8 +1602,9 @@
       </div>
       <div class="prod-grid">
         <article class="prod reveal">
-          <div class="ph pimg"
-            style="background-image:url('фото для сайта/webp/DSC03242 s 1_1.webp');background-position:center;background-size:cover">
+          <div class="ph pimg lazy-bg"
+            data-bg="фото для сайта/webp/DSC03242 s 1_1.webp"
+            style="background-position:center;background-size:cover">
           </div>
           <div class="pin">
             <div class="pname">Гребешок приморский</div>
@@ -1613,8 +1617,9 @@
           </div>
         </article>
         <article class="prod reveal">
-          <div class="ph pimg"
-            style="background-image:url('фото для сайта/webp/DSC03249 s 4_5.webp');background-position:center;background-size:cover">
+          <div class="ph pimg lazy-bg"
+            data-bg="фото для сайта/webp/DSC03249 s 4_5.webp"
+            style="background-position:center;background-size:cover">
           </div>
           <div class="pin">
             <div class="pname">Трепанг дальневосточный</div>
@@ -1626,8 +1631,9 @@
           </div>
         </article>
         <article class="prod reveal">
-          <div class="ph pimg"
-            style="background-image:url('фото для сайта/webp/dried sea cucumber 1_1.webp');background-position:center;background-size:cover">
+          <div class="ph pimg lazy-bg"
+            data-bg="фото для сайта/webp/dried sea cucumber 1_1.webp"
+            style="background-position:center;background-size:cover">
           </div>
           <div class="pin">
             <div class="pname">Трепанг сушёный</div>
@@ -1639,8 +1645,9 @@
           </div>
         </article>
         <article class="prod reveal">
-          <div class="ph pimg"
-            style="background-image:url('фото для сайта/webp/Pacific oysters._1_1.webp');background-position:center;background-size:cover">
+          <div class="ph pimg lazy-bg"
+            data-bg="фото для сайта/webp/Pacific oysters._1_1.webp"
+            style="background-position:center;background-size:cover">
           </div>
           <div class="pin">
             <div class="pname">Устрицы тихоокеанские</div>
@@ -1652,8 +1659,9 @@
           </div>
         </article>
         <article class="prod reveal">
-          <div class="ph pimg"
-            style="background-image:url('фото для сайта/webp/Pacific mussels.png _1_1.webp');background-position:center;background-size:cover">
+          <div class="ph pimg lazy-bg"
+            data-bg="фото для сайта/webp/Pacific mussels.png _1_1.webp"
+            style="background-position:center;background-size:cover">
           </div>
           <div class="pin">
             <div class="pname">Мидии тихоокеанские</div>
@@ -1740,8 +1748,9 @@
         </div>
       </div>
       <div class="reveal">
-        <div class="ph farm-ph"
-          style="background-image:url('фото для сайта/webp/marine farm underwater 2.webp');background-position:right center;background-size:cover">
+        <div class="ph farm-ph lazy-bg"
+          data-bg="фото для сайта/webp/marine farm underwater 2.webp"
+          style="background-position:right center;background-size:cover">
           <svg class="ph-wave" viewBox="0 0 500 60" preserveAspectRatio="none" aria-hidden="true">
             <path d="M0 30c60-25 120-25 180 0s120 25 180 0 120-25 140-10v40H0z" fill="#5FC6BD" opacity=".3" />
           </svg>
@@ -1754,8 +1763,9 @@
   <section class="sec">
     <div class="wrap teasers">
       <div class="teaser reveal" id="spat">
-        <div class="ph t-ph"
-          style="background-image:url('фото для сайта/webp/little scallop 3.webp');background-position:center;background-size:cover">
+        <div class="ph t-ph lazy-bg"
+          data-bg="фото для сайта/webp/little scallop 3.webp"
+          style="background-position:center;background-size:cover">
         </div>
         <div class="t-in">
           <span class="tag">Выращиваем марикультуру</span>
@@ -1766,8 +1776,9 @@
         </div>
       </div>
       <div class="teaser pharma reveal" id="pharma">
-        <div class="ph t-ph"
-          style="background-image:url('фото для сайта/webp/sea cucumber bottle.webp');background-position:left center;background-size:cover">
+        <div class="ph t-ph lazy-bg"
+          data-bg="фото для сайта/webp/sea cucumber bottle.webp"
+          style="background-position:left center;background-size:cover">
         </div>
         <div class="t-in">
           <span class="tag">Функциональное питание</span>
@@ -1956,14 +1967,54 @@
       let i = 0;
       for (let d = 0; d < slides; d++) { const s = document.createElement('span'); dotsWrap.appendChild(s); }
       const dots = dotsWrap.children;
+      function loadSlide(n) {
+        const slide = track.children[n];
+
+        if (slide && slide.dataset.bg) {
+          slide.style.backgroundImage = `url('${slide.dataset.bg}')`;
+          slide.removeAttribute('data-bg');
+        }
+      }
+
       function go(n) {
-        i = (n + slides) % slides; track.style.transform = 'translateX(' + (-i * 100) + '%)';
-        for (let d = 0; d < slides; d++)dots[d].classList.toggle('on', d === i);
+        i = (n + slides) % slides;
+
+        loadSlide(i);
+
+        track.style.transform = 'translateX(' + (-i * 100) + '%)';
+
+        for (let d = 0; d < slides; d++) {
+          dots[d].classList.toggle('on', d === i);
+        }
       }
       document.getElementById('heroPrev').onclick = () => go(i - 1);
       document.getElementById('heroNext').onclick = () => go(i + 1);
       go(0);
     })();
+
+    // lazy loading фоновых изображений
+    const lazyBgObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target;
+        const src = el.dataset.bg;
+
+        if (src) {
+          el.style.backgroundImage = `url('${src}')`;
+          el.removeAttribute('data-bg');
+        }
+
+        observer.unobserve(el);
+      });
+    }, {
+      rootMargin: '300px 0px',
+      threshold: 0.01
+    });
+
+    document.querySelectorAll('.lazy-bg[data-bg]').forEach(el => {
+      lazyBgObserver.observe(el);
+    });
 
     // reveal on scroll
     const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } }), { threshold: .12 });
