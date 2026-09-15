@@ -1,0 +1,107 @@
+/* Shared responsive and accessibility rules. Loaded after page-specific styles. */
+    [hidden] { display: none !important; }
+    html { scroll-padding-top: 100px; }
+    :is(a, button, input, select, textarea, summary):focus-visible {
+      outline: 3px solid var(--tide); outline-offset: 4px;
+    }
+    .contact :is(a, button, input, select, textarea):focus-visible {
+      outline-color: var(--foam);
+    }
+    .reveal { opacity: 1; transform: none; }
+    .wrap, .field, .pin, .rin, .product > *, .lead-hero > *, .contact-in > * { min-width: 0; }
+    h1, h2, h3, .pname, .rname, .cinfo a, .ft p { overflow-wrap: anywhere; }
+    .prod-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .prod, .relcard, .icard, .card { min-width: 0; }
+    .prod .pact { flex-direction: column; align-items: stretch; gap: 10px; }
+    .prod .more { display: flex; min-height: 44px; align-items: center; justify-content: center; white-space: normal; }
+    .prod .req { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; overflow-wrap: anywhere; }
+    .cards4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .rel-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .cards2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .messenger-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; min-width: 0; }
+    .messenger-links a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 4px; }
+    .form input, .form select, .form textarea { font-size: 16px; min-width: 0; }
+    .form textarea { resize: vertical; }
+    .hero-slider, .gallery-main, .lead-slider { touch-action: pan-y pinch-zoom; }
+    .hero-arrow { width: 48px; height: 48px; flex: 0 0 48px; background: var(--deep); color: white; border-color: white; }
+    .hero-arrow:hover { background: var(--abyss); color: white; }
+    .hero-chip { left: 12px; bottom: 82px; max-width: calc(100% - 24px); }
+    .gthumb { min-width: 0; padding: 0; min-height: 44px; }
+    .gallery-status { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+    .specs { width: 100%; }
+    .specs table { border-collapse: collapse; width: 100%; font-size: 15px; }
+    .specs th, .specs td { padding: 12px 18px; border-top: 1px solid var(--line-soft); text-align: left; vertical-align: top; }
+    .specs tr:first-child > * { border-top: 0; }
+    .specs th { width: 1%; min-width: clamp(130px, 32vw, 235px); font-weight: 400; color: var(--muted); }
+    .specs td { font-weight: 600; overflow-wrap: anywhere; }
+    .hdr-in { position: relative; }
+    .burger { flex: 0 0 44px; width: 44px; height: 44px; align-items: center; justify-content: center; }
+    .burger[aria-expanded="true"] { background: var(--mist); border-radius: 10px; }
+    .nav .mobile-contact { display: none; }
+    @media (max-width: 1280px) {
+      .prod-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    @media (max-width: 1120px) {
+      .prod-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .hdr-contact { display: none; }
+      .burger { display: flex; }
+      .hdr-in { flex-wrap: wrap; height: auto; min-height: 76px; gap: 0 12px; }
+      .hdr-cta { padding-top: 0; gap: 8px; align-items: center; }
+      .nav { display: flex; flex: 0 0 100%; order: 3; flex-direction: column; gap: 0; padding: 12px 0; }
+      .nav a { display: flex; align-items: center; min-height: 48px; padding: 10px 16px; }
+      .nav .mobile-contact { display: flex; }
+      .menu-ready .nav { position: absolute; top: 100%; left: 18px; right: 18px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); max-height: calc(100dvh - 100px); overflow-y: auto; }
+      .menu-ready .nav:not(.is-open) { display: none; }
+    }
+    @media (max-width: 900px) {
+      .cards4, .rel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cards2 { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 700px) {
+      .prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .map-actions { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 420px; }
+      .map-actions .btn { width: 100%; min-height: 54px; text-align: center; white-space: normal; justify-content: center; }
+    }
+    @media (max-width: 560px) {
+      html { scroll-padding-top: 84px; }
+      .hdr-in { min-height: 72px; gap: 0 6px; }
+      .hdr .logo { font-size: 15px; gap: 6px; }
+      .hdr .mark { width: 32px; height: 32px; }
+      .hdr .hdr-cta { gap: 4px; }
+      .hdr-cta .btn-sm { padding: 10px 12px; font-size: 12px; min-height: 44px; }
+      .hero-in { padding-top: 20px; }
+      .hero-visual { width: 100%; max-width: 440px; margin-inline: auto; }
+      .hero-slider { aspect-ratio: 1 / 1; }
+      .hero-chip { position: static; margin-top: 12px; max-width: none; padding: 14px 16px; }
+      .hero-chip .v { font-size: 17px; }
+      .hero-arrows { bottom: 12px; }
+      .eyebrow { letter-spacing: .1em; font-size: 10px; flex-wrap: wrap; }
+      .icard, .card { padding: 14px; }
+      .icard h3, .card h3 { font-size: 16px; hyphens: auto; }
+      .specs th, .specs td { padding: 12px; font-size: 14px; }
+      .specs th { min-width: 125px; }
+      .form { padding: 20px 16px; }
+      .form .row { grid-template-columns: minmax(0, 1fr); }
+      .form .btn { width: 100%; justify-content: center; white-space: normal; }
+      .ft-grid { grid-template-columns: minmax(0, 1fr); }
+      .ft-bottom { flex-wrap: wrap; gap: 12px; }
+    }
+    @media (max-width: 420px) {
+      .prod-grid, .rel-grid { grid-template-columns: minmax(0, 1fr); }
+      .prod .pname { min-height: 0; font-size: 22px; }
+      .prod .pin { padding: 18px; }
+    }
+    @media (max-width: 360px) {
+      .hdr .logo { font-size: 14px; gap: 4px; }
+      .hdr .mark { width: 26px; height: 26px; }
+      .hdr-cta .btn-sm { padding-inline: 9px; font-size: 11px; }
+      .cards4 { grid-template-columns: minmax(0, 1fr); }
+      .specs th { min-width: 108px; }
+      .specs th, .specs td { padding: 10px; font-size: 13px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  
+.lead-hero > .gallery-status { grid-column: 2; }
+@media (max-width: 900px) { .lead-hero > .gallery-status { grid-column: 1; margin-top: -16px; } }

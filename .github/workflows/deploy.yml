@@ -14,6 +14,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Build shared page elements
+        run: node build-site.mjs
+
+      - name: Check pages and local links
+        run: node check-site.mjs
+
       - name: Deploy website via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -30,3 +36,8 @@ jobs:
             **/*.ARW
             **/*.arw
             **/.DS_Store
+            **/*.txt
+            **/*.md
+            **/*.mjs
+            **/*.template.html
+            **/index-before-lazy.html
